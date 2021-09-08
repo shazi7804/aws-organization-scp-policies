@@ -1,0 +1,29 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+      {
+        "Sid": "DenyAccessToRISP",
+        "Effect": "Deny",
+        "Action": [
+          "ec2:PurchaseReservedInstancesOffering",
+          "ec2:AcceptReservedInstancesExchangeQuote",
+          "ec2:CancelCapacityReservation",
+          "ec2:CancelReservedInstancesListing",
+          "ec2:CreateCapacityReservation",
+          "ec2:CreateReservedInstancesListing",
+          "ec2:PurchaseScheduledInstances",
+          "ec2:PurchaseHostReservation",
+          "es:PurchaseReservedElasticsearchInstanceOffering",
+          "rds:PurchaseReservedDBInstancesOffering",
+          "rds:DescribeReservedDBInstancesOfferings",
+          "elasticache:PurchaseReservedCacheNodesOffering",
+          "elasticache:DescribeReservedCacheNodesOfferings",
+          "redshift:DescribeReservedNodeOfferings",
+          "redshift:GetReservedNodeExchangeOfferings",
+          "redshift:PurchaseReservedNodeOffering",
+          "savingsplans:*"
+        ],
+        "Resource": "*"
+      }
+    ]
+  }
